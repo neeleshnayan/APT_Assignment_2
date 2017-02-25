@@ -68,14 +68,12 @@ def q4():  # Answer to the fourth question
 
 
 def q5():  # Answer to the fifth question
-    sort_list = [6, 1, 4, 3, 9]
-    print('Original list', sort_list)
-    for i in range(0, len(sort_list)-1):
-        for j in range(i+1, len(sort_list)):
-            if sort_list[i] > sort_list[j]:
-                sort_list[i], sort_list[j] = sort_list[j], sort_list[i]
-
-    print('Sorted list', sort_list)
+    l=[1,3,2,4,2]
+    for i in l:
+	for j in l[i:len(l)]:
+		if l[i]>l[j]:
+			l[i],l[j]=l[j],l[i]
+    print(l)
 
 
 def main():  # main function
